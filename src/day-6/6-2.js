@@ -6,13 +6,10 @@ const map = new Map();
 for (let elem of arr) {
   map.set(...elem.split(')').reverse());
 }
-let you = 'YOU-';
-let santa = 'SAN-';
-let totalOrbitCount = 0;
 
 const way = {
-  'YOU': ['YOU'],
-  'SAN': ['SAN']
+  'YOU': [],
+  'SAN': []
 }
 
 for (let elem of Object.keys(way)) {
@@ -25,9 +22,9 @@ for (let elem of Object.keys(way)) {
     k = v;
     v = map.get(v);
   }
-  console.log(counter);
   way[elem].reverse();
 }
+
 let same = 0;
 for (let i = 0; i < Math.max(way['YOU'].length, way['SAN'].length); i++) {
   if (way['YOU'][i] == way['SAN'][i]) {
@@ -36,4 +33,4 @@ for (let i = 0; i < Math.max(way['YOU'].length, way['SAN'].length); i++) {
     break;
   }
 }
-console.log(way['YOU'].length + way['SAN'].length - same * 2 - 2);
+console.log(way['YOU'].length + way['SAN'].length - same * 2);
