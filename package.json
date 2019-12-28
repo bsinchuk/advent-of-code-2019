@@ -1,0 +1,24 @@
+{
+  "name": "advent-of-code-2019",
+  "version": "1.0.0",
+  "description": "js solutions for aoc 2019",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsinchuk/advent-of-code-2019.git"
+  },
+  "keywords": [
+    "aoc",
+    "js"
+  ],
+  "author": "bsinchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsinchuk/advent-of-code-2019/issues"
+  },
+  "homepage": "https://github.com/bsinchuk/advent-of-code-2019#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
